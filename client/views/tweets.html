@@ -1,0 +1,12 @@
+<div id="tweetInputContainer">
+	<form>
+	<input type="text" ng-model="tweetBox" id="box">
+	<button ng-click="post()" id="button">POST</button>
+	</form>
+</div>
+
+	<div class="tweets">
+		<ul class="posted">
+			<li ng-repeat="tweet in tweets">{{ tweet.userName }}: {{ tweet.text }}</li>
+		</ul>
+	</div>
